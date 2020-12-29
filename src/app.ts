@@ -1,7 +1,11 @@
-import express from 'express'
+import fastify from 'fastify'
 
-const app = express()
+const app = fastify({
+  logger: true
+})
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => {
+  res.send({ hello: 'world' })
+})
 
 export default app

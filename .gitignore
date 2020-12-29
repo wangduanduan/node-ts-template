@@ -4,4 +4,5 @@
 /public/uploads
 .DS_Store
 /.vscode
+*.swp
 cached/*.mp3

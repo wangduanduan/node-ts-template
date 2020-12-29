@@ -4,9 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
-const server = app_1.default.listen(3000, () => {
-    console.log("  App is running at http://localhost:%d in %s mode", 3000, app_1.default.get("env"));
-    console.log("  Press CTRL-C to stop\n");
+const server = app_1.default.listen(3000, (err, address) => {
+    if (err)
+        throw err;
+    console.log('app running on port 3000');
 });
 exports.default = server;
 //# sourceMappingURL=server.js.map
