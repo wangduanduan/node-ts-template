@@ -14,7 +14,7 @@
   "author": "wangduanduan <1779706607@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^3.9.2"
+    "fastify": "^3.29.4"
   },
   "devDependencies": {
     "@types/node": "^14.14.16",
