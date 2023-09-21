@@ -1,24 +1,17 @@
-# node-server-template
-NodeJS Web 服务器模板，包括Express、TypeScript、Jest
+# node-ts-template
 
-注意项目的开始，node-server-template目录下只有一个README.md文件
+NodeJS + typescript 模版
 
-# yarn init
+-   必须使用typescript
+-   必须使用pnpm
+-   必须使用prettier对代码进行格式化
+-   使用cspell对单词进行检查
 
-创建package.json文件
+# 使用方式
 
-```
-cd node-server-template
-yarn init
-```
+-   建议使用[tiged](https://github.com/tiged/tiged)来安装模版文件
 
-# 
-
-```bash
-mkdir src
-cd src
-touch app.ts
-mkdir bin
-cd bin
-touch www.ts
+```shell
+pnpm add -g tiged
+tiged wangduanduan/node-ts-template your_new_dir_name
 ```
